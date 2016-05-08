@@ -1,0 +1,250 @@
+.demo-content > div:nth-child(1) {
+  background-color: #009688;
+}
+
+.demo-content > div:nth-child(2) {
+  background-color: #3949ab;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+body {
+  /*background-color: #FEEBC8;*/
+}
+/*div[flex="30"] {*/
+  /*background-color: #DFDFDF;*/
+/*}*/
+
+/*section[flex="40"] {*/
+  /*background-color: #D4E5FA;*/
+/*}*/
+/*section[flex="70"] {*/
+  /*background-color: #E8FCD6;*/
+/*}*/
+/*section[flex="20"] {*/
+  /*background-color: #FFD5E3;*/
+/*}*/
+/*section[flex=""] {*/
+  /*background-color: rgba(0, 128, 0, 0.35);*/
+/*}*/
+
+
+/* Important to set height for column layout */
+.boxWithHeight {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+
+/*
+Copyright 2016 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that can be in foundin the LICENSE file at http://material.angularjs.org/license.
+*/
+
+
+
+
+
+
+
+
+.video {
+  width: 100%;
+  height: auto;
+  vertical-align:bottom;
+  /*border-radius: 10px;*/
+}
+
+
+body {
+
+  background-color: #f1f1f1;
+  font-family: 'Roboto', 'Open Sans', 'Lucida Grande', sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  /*color: #fff;*/
+
+}
+
+.centor {
+  text-align: center;
+}
+
+.relative {
+  position: relative;
+}
+
+.video-area {
+  font-size: 0;
+  height: 100%;
+  /*pointer-events: none;*/
+  position: absolute;
+  /*transition: all 1s;*/
+  width: 100%;
+  overflow: hidden;
+}
+
+.video-area > video {
+  height: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  /*transition: opacity 1s;*/
+  /*-moz-transform: scale(-1, 1);*/
+  /*-ms-transform: scale(-1, 1);*/
+  /*-o-transform: scale(-1, 1);*/
+  /*-webkit-transform: scale(-1, 1);*/
+  /*transform: scale(-1, 1);*/
+  width: 100%;
+}
+
+#remote-video {
+  display: block;
+  height: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  opacity: 0;
+  position: absolute;
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  transition: opacity 1s;
+  width: 100%;
+}
+
+
+.container {
+  background-color: #0C2238;
+}
+
+.test2 {
+  /*background-color: #3949ab;*/
+}
+
+.test3 {
+  background-color: #db392a;
+}
+
+.test4 {
+  background-color: #a34c00;
+}
+
+.test5 {
+  background-color: #c1e2b3;
+}
+
+.icon-l {
+  line-height: 5.6rem;
+  min-width: 0;
+  width: 8.6rem;
+  height: 8.6rem;
+  border-radius: 50%;
+  background-color: rgb(63,81,181);
+}
+
+.md-button.md-fab {
+  line-height: 5.6rem;
+  min-width: 0;
+  width: 5.6rem;
+  height: 5.6rem;
+  border-radius: 50%;
+}
+
+.md-button.md-fab.md-mini {
+  line-height: 2.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.dialog-message #popupContainer {
+  position: relative; }
+
+.dialog-message .footer {
+  width: 100%;
+  text-align: center;
+  margin-left: 20px; }
+
+.dialog-message .footer, .dialog-message .footer > code {
+  font-size: 0.8em;
+ }
+
+/*body {*/
+  /*overflow: hidden;*/
+  /*background-color: #EEEEEE;*/
+/*}*/
+
+.whiteframe {
+  background: #fff;
+}
+
+
+md-toolbar .md-button.md-default-theme {
+  border-radius: 99%;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+.md-toolbar-tools-bottom {
+  font-size: small;
+}
+.md-toolbar-tools-bottom :last-child {
+  opacity: 0.8;
+}
+
+md-toolbar:not(.md-hue-1),
+.md-fab {
+  fill: #fff;
+}
+
+md-toolbar.md-hue-2 {
+  background-color: rgb(2,119,189);
+  color: rgb(255,255,255);
+}
+
+
+
+.name-area2 {
+  background-color: black;
+  bottom: 0;
+  color: white;
+  display: none;
+  font-size: .9em;
+  font-weight: 300;
+  line-height: 2em;
+  max-height: 80%;
+  opacity: 0;
+  overflow-y: auto;
+  padding: 10px;
+  position: absolute;
+  transition: opacity 1s;
+  width: calc(100% - 20px);
+}
+
+.name-area {
+
+  display: inline;
+  background-color: black;
+  bottom: 0;
+  color: white;
+  /*display: none;*/
+  font-size: .9em;
+  font-weight: 300;
+  line-height: 1em;
+  max-height: 80%;
+  opacity: 0.5;
+  overflow-y: auto;
+  padding: 10px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+
+}

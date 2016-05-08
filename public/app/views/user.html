@@ -1,0 +1,162 @@
+
+
+<!--<section layout="column" role="main" flex>-->
+
+  <!--<section id="content" role="content" layout="column" layout-padding layout-align="center center">-->
+
+    <!--<md-content class="md-whiteframe-z2" ng-cloak style="width: 50%;" layout-align="center center">-->
+
+
+        <!--<div layout="row" flex layout-align="center center" layout-margin>-->
+
+            <!--<md-input-container class="" style="width: 300px" >-->
+              <!--<label>ユーザ名を入力</label>-->
+              <!--<input tabindex="1" type="text" ng-model="userName" required >-->
+            <!--</md-input-container>-->
+
+        <!--</div>-->
+
+      <!--<section layout="row" layout-sm="column" layout-align="center center" layout-wrap>-->
+        <!--<md-button class="md-raised md-primary" ng-click="roomIn()">入室</md-button>-->
+      <!--</section>-->
+
+    <!--</md-content>-->
+  <!--</section>-->
+
+<!--</section>-->
+
+
+<!--<div layout="column" class="boxWithHeight" flex >-->
+  <!--<div style="background-color: #00A000" flex="30" layout="row" class="boxWithHeight" layout-margin layout-padding ng-cloak layout-align="center">-->
+
+    <!--<div flex="50" layout="column" style="background-color: #00a1d9" >-->
+
+      <!--<md-toolbar class="md-hue-2" style="background-color: rgb(2,119,189);" ng-cloak layout-padding>-->
+        <!--<span layout-padding flex>ルーム入室</span>-->
+      <!--</md-toolbar>-->
+
+      <!--<md-content flex class="md-whiteframe-z2 boxWithHeight" ng-cloak layout-align="center" layout="column">-->
+
+        <!--<section layout-margin layout-align="center">-->
+          <!--test-->
+        <!--</section>-->
+
+        <!--<section flex layout="row" layout-align="center">-->
+          <!--<section flex="70" layout="column">-->
+            <!--<md-input-container class="" >-->
+              <!--<label>ユーザ名を入力</label>-->
+              <!--<input tabindex="1" type="text" ng-model="userName" required >-->
+            <!--</md-inut-container>-->
+          <!--</section>-->
+        <!--</section>-->
+
+        <!--<section flex layout="row" layout-sm="column" layout-align="center center" layout-wrap>-->
+          <!--<md-button class="md-raised md-primary" ng-click="roomIn()">入室</md-button>-->
+        <!--</section>-->
+
+      <!--</md-content>-->
+
+    <!--</div>-->
+
+  <!--</div>-->
+<!--</div>-->
+
+<!--<div layout="column" class="boxWithHeight" flex >
+
+  <div flex="70" layout="row" class="boxWithHeight" layout-margin layout-padding ng-cloak layout-align="center">
+
+    <div flex="70" layout="column" class="boxWithHeight" >
+
+      <md-toolbar flex="15 class="md-hue-2" style="background-color: rgb(2,119,189);" ng-cloak layout-padding>
+        <span layout-padding flex>ルーム入室</span>
+      </md-toolbar>
+
+      <md-content flex="85" class="md-whiteframe-z2 boxWithHeight" ng-cloak layout="column">
+
+
+        <section flex="20" layout="row" layout-padding layout-align="center" >
+          <section layout="column">
+            {{message}}
+          </section>
+        </section>
+
+        <section flex layout="row" layout-align="center">
+          <section flex="70" layout="column">
+
+            <md-input-container>
+              <label>好きなユーザ名を入力</label>
+              <input tabindex="1"
+                     autofocus
+                     ng-model="userName"
+                     ng-maxlength="500"
+                     name="userName" required ng-keydown="handleKeydown($event)"/>
+
+            </md-input-container>
+
+          </section>
+        </section>
+
+        <section flex="30" layout="row" layout-align="center" >
+          <section layout="column">
+            <md-button class="md-raised md-primary" ng-click="roomIn()">入室</md-button>
+          </section>
+        </section>
+
+      </md-content>
+
+    </div>
+
+  </div>
+</div>-->
+
+
+<div layout="column" style="margin: 0 auto;">
+
+  <div flex layout="row" layout-margin ng-cloak layout-align="center" >
+
+    <div layout="column" class="md-whiteframe-z2"  style="width: 500px;height: 600px;">
+
+
+      <div flex="10" layout="row" >
+          <md-toolbar class="md-hue-2" style="background-color: rgb(2,119,189);" ng-cloak layout-padding>
+              <span>ルーム入室</span>
+          </md-toolbar>
+      </div>
+
+      <div flex="30" layout="row" layout-align="center" >
+
+        <div flex layout="row" >
+            <md-icon md-svg-src="images/person_l.svg" class="icon-l md-fab"></md-icon>
+        </div>
+
+      </div>
+
+      <div flex="10" layout="row" layout-align="center center" style="background-color: darkgrey; color: #fff;" layout-margin layout-padding>
+        {{message}}
+      </div>
+
+      <div flex="20" layout="row" layout-align="center" layout-padding >
+
+          <md-input-container style="width: 100%">
+            <label>好きなユーザ名を入力</label>
+            <input tabindex="1"
+                   autofocus
+                   ng-model="userName"
+                   ng-maxlength="500"
+                   name="userName" required ng-keydown="handleKeydown($event)"/>
+
+          </md-input-container>
+
+      </div>
+
+      <div flex="10" layout="row" layout-align="center" layout-margin>
+
+          <section layout="column">
+            <md-button class="md-raised md-primary" ng-click="roomIn()">入室</md-button>
+          </section>
+      </div>
+
+    </div>
+  </div>
+
+</div>
