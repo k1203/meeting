@@ -1,4 +1,2 @@
-AngularJS WebRTC
-================
 
 # meeting
