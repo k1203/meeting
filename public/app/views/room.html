@@ -1,405 +1,49 @@
-<!--<div class="container">-->
 
-  <!--<div class="row">-->
+<md-sidenav  md-is-locked-open="$mdMedia('gt-sm')" md-component-id="left" class="md-whiteframe-z2" >
 
-    <!--<div class="">-->
+  <div layout="column" >
 
-      <!--<div class="col-md-4">-->
-        <!--<video class="my-video" ng-src="{{getLocalVideo()}}" autoplay muted></video>-->
-      <!--</div>-->
-
-    <!--</div>-->
-
-    <!--<div class="col-md-8">-->
-
-        <!--<video-player ng-repeat="peer in peers" vid-src="{{peer.stream}}" vid-length="{{peerslength}}"></video-player>-->
-
-      <!--&lt;!&ndash;<div ng-animate="'animate'" ng-repeat="peer in testpeers"><video ng-src="{{peer.stream}}" autoplay></video></div>&ndash;&gt;-->
-
-    <!--</div>-->
-
-  <!--</div>-->
-
-<!--</div>-->
-
-
-
-
-
-  <!--<div class="container" layout="row" flex>-->
-    <!--<md-sidenav md-is-locked-open="true" class="test1" style="background: #0C2238">-->
-      <!--<video class="my-video" ng-src="{{getLocalVideo()}}" autoplay muted></video>-->
-
-      <!--<div flex layout="column" style="overflow: auto;" style="background: #0C2238">-->
-
-       <!--<md-content flex style="background: #0C2238" >-->
-
-         <!--<div layout="column" flex >-->
-
-           <!--<div layout="row" >-->
-             <!--<div flex="33" class="" style="text-align: center;">-->
-
-               <!--<md-button class="md-fab md-mini" aria-label="camera" ng-click="setCamera()">-->
-                 <!--<md-icon md-svg-src="{{cameraSvgSrc}}"></md-icon>-->
-               <!--</md-button>-->
-
-             <!--</div>-->
-
-             <!--<div flex="33" class="" style="text-align: center;">-->
-               <!--<md-button class="md-fab md-mini" aria-label="audio" ng-click="setAudio()">-->
-                 <!--<md-icon md-svg-src="{{audioSvgSrc}}"></md-icon>-->
-               <!--</md-button>-->
-             <!--</div>-->
-
-             <!--<div flex="33" class="" style="text-align: center;">-->
-               <!--<md-button class="md-fab md-mini" aria-label="Eat cake" ng-click="showAlert($event)">-->
-                 <!--<md-icon md-svg-src="images/share.svg"></md-icon>-->
-               <!--</md-button>-->
-             <!--</div>-->
-
-           <!--</div>-->
-
-         <!--</div>-->
-
-       <!--</md-content>-->
-
-        <!--<md-content flex layout-margin md-scroll-y scroll-glue>-->
-
-          <!--<div ng-repeat="msg in messages" layout="column" class="mar-ver-5">-->
-            <!--<div layout="row" layout-align="start center">-->
-              <!--<b>{{msg.username || '[anonymous]'}}</b>-->
-              <!--<small class="pad-lef-5" am-time-ago="msg.timestamp"></small>-->
-            <!--</div>-->
-            <!--<div>{{msg.message}}</div>-->
-          <!--</div>-->
-
-        <!--</md-content>-->
-
-        <!--<md-content class="md-padding" layout="column" novalidate>-->
-
-          <!--<md-input-container>-->
-            <!--<label>Message</label>-->
-            <!--<input tabindex="1"-->
-                   <!--autofocus-->
-                   <!--ng-model="newMessage"-->
-                   <!--ng-maxlength="500"-->
-                   <!--name="newMessageText" ng-keydown="handleKeydown($event)"/>-->
-
-          <!--</md-input-container>-->
-
-        <!--</md-content>-->
-
-      <!--</div>-->
-
-    <!--</md-sidenav>-->
-
-
-    <!--<md-content  style="background: #0C2238" flex class="content" style="position: relative;">-->
-
-      <!--<div layout="column" flex>-->
-
-        <!--<div layout="row" layout-wrap class="" style="position: relative;">-->
-
-          <!--<div flex="50" class="videos" >-->
-            <!--<video class="local-video" ng-src="{{getLocalVideo()}}" autoplay muted></video>-->
-          <!--</div>-->
-
-           <!--&lt;!&ndash;<video-player ng-repeat="peer in peers" vid-src="{{peer.stream}}" vid-length="{{peerslength}}"></video-player>&ndash;&gt;-->
-          <!--&lt;!&ndash;<div flex="50" class="test3">Column B</div>&ndash;&gt;-->
-          <!--&lt;!&ndash;<div flex="50" class="test5">Column C</div>&ndash;&gt;-->
-        <!--</div>-->
-
-      <!--</div>-->
-
-
-    <!--</md-content>-->
-  <!--</div>-->
-
-
-
-
-<script type="text/ng-template" id="dialog1.tmpl.html"><md-dialog aria-label="シェア"  ng-cloak>
-<form>
-  <md-toolbar>
-    <div class="md-toolbar-tools">
-      <h2>シェア</h2>
-      <span flex></span>
-      <md-button class="md-icon-button" ng-click="cancel()">
-        <md-icon md-svg-src="images/close.svg" aria-label="Close dialog"></md-icon>
-      </md-button>
-    </div>
-  </md-toolbar>
-
-  <md-dialog-content>
-    <div class="md-dialog-content dialog-message">
-      <h2>ルームURL (参加者へ伝えて下さい)</h2>
-      <p>
-        {{roomUrl}}
-      </p>
+    <div class="my-video">
+      test
     </div>
 
-    <div layout="column" flex layout-padding>
+  </div>
 
-      <div layout="row" >
+  <md-content flex class="nav">
 
-        <div flex="50" class="" style="text-align: center;">
+    <div flex="noshrink" layout-margin>
 
-          <md-button clipboard supported="supported" text="roomUrl" class="md-fab md-mini" aria-label="copy" >
+      <div class="nav-content md-whiteframe-z2 chat-message">
 
-            <md-tooltip md-direction="top">
-              クリップボードにコピー
-            </md-tooltip>
+        <header layout="row" layout-align="start center">
+          <md-icon md-svg-icon="chat" style="margin:0 10px;"></md-icon>
+          <h2>Chat Message</h2>
+        </header>
 
-            <md-icon md-svg-src="images/copy.svg"></md-icon>
+        <md-content class="md-whiteframe-z2" layout="row">
+          test
+        </md-content>
 
-          </md-button>
-
-        </div>
-
-
-        <div flex="50" class="" style="text-align: center;">
-        <md-button class="md-fab md-mini" aria-label="mailto" ng-click="mailto()">
-
-        <md-tooltip md-direction="top">
-        メールで通知
-        </md-tooltip>
-
-        <md-icon md-svg-src="images/mail.svg"></md-icon>
-        </md-button>
-        </div>
-
+        <div>
+          input area
+        </div>        
 
       </div>
 
     </div>
-
-  </md-dialog-content>
-
-
-</form>
-</md-dialog>
-</script>
-
-
-
-
-
-
-<!--<div flex="30" layout="column" class="boxWithHeight" ng-cloak>-->
-  <md-sidenav md-is-locked-open="true" layout="column" ng-cloak style="width: 400px; height: 900px;">
-
-    <section flex="5" style="background-color: rgb(2,119,189);" layout="column" layout-align="center center" ng-cloak>
-      <!--<md-toolbar class="md-hue-2" style="background-color: rgb(2,119,189);" ng-cloak>-->
-        <div flex layout="column" layout-align="center center">
-          <div flex>
-            <md-icon md-svg-src="images/person.svg"></md-icon>
-          </div>
-          <div flex style="font-size: small;color: #fff;">
-            {{userName}}
-          </div>
-        </div>
-        <!--</div>-->
-      <!--</md-toolbar>-->
-    </section>
-
-  <section flex="30" class="relative">
-    <div class="video-area">
-      <video class="local-video" ng-src="{{getLocalVideo()}}" autoplay muted></video>
-    </div>
-
-    <div flex layout="row" style="position: absolute; right: 0; bottom: 0;">
-
-      <section flex="33" class="centor">
-        <md-button class="md-fab md-mini" aria-label="camera" ng-click="setCamera()">
-          <md-icon md-svg-src="{{cameraSvgSrc}}"></md-icon>
-        </md-button>
-      </section>
-
-      <section flex="33" class="centor" >
-        <md-button class="md-fab md-mini" aria-label="audio" ng-click="setAudio()">
-          <md-icon md-svg-src="{{audioSvgSrc}}"></md-icon>
-        </md-button>
-      </section>
-
-      <section flex="33" class="centor" >
-        <md-button class="md-fab md-mini" aria-label="Eat cake" ng-click="showAlert($event)">
-          <md-icon md-svg-src="images/share.svg"></md-icon>
-        </md-button>
-      </section>
-
-    </div>
-
-  </section>
-
-
-
-  <div flex layout="column" class="md-whiteframe-z2 whiteframe boxWithHeight" layout-margin layout-padding>
-
-
-
-    <md-content class="md-whiteframe-z5" flex="85" layout-margin md-scroll-y scroll-glue >
-
-
-        <div ng-repeat="msg in messages" layout="column" class="mar-ver-5">
-
-          <div layout="row" layout-align="start center">
-            <div style="background-color: #0a2b1d">
-              <md-icon md-svg-src="images/person.svg"></md-icon>
-            </div>
-            <small layout-margin> [{{msg.username || 'anonymous'}}]</small>
-            <small class="pad-lef-5" am-time-ago="msg.timestamp"></small>
-          </div>
-
-          <div layout="row" layout-align="start center">
-            <span layout-margin style="font-size: 14px;">{{msg.message}}</span>
-          </div>
-
-        </div>
-
-    </md-content>
-
-    <section flex="15" layout="row">
-      <section flex="90" layout="column">
-
-        <md-input-container>
-          <label>{{inputMessage}}</label>
-          <input tabindex="1"
-            autofocus
-            ng-model="newMessage"
-            ng-maxlength="500"
-            name="newMessageText" ng-keydown="handleKeydown($event)"/>
-
-        </md-input-container>
-
-      </section>
-
-      <section flex layout="row" layout-align="center center" >
-
-        <md-menu flex>
-          <md-button style="background-color: #3f729b" aria-label="Open phone interactions menu" class="md-icon-button" ng-click="openMenu($mdOpenMenu, $event)">
-            <md-icon md-svg-icon="images/translate.svg"></md-icon>
-          </md-button>
-          <md-menu-content width="4" flex>
-            <md-menu-item>
-              <md-button ng-click="translateSet('non', 'non')">
-                翻訳なし
-              </md-button>
-            </md-menu-item>
-
-            <md-menu-item>
-              <md-button ng-click="translateSet('ja', 'en')">
-                日 → 英
-              </md-button>
-            </md-menu-item>
-
-            <md-menu-item>
-              <md-button ng-click="translateSet('en', 'ja')">
-                英 → 日
-              </md-button>
-            </md-menu-item>
-
-            <md-menu-item>
-              <md-button ng-click="translateSet('ja', 'zh-cn')">
-                日 → 中
-              </md-button>
-            </md-menu-item>
-
-            <md-menu-item>
-              <md-button ng-click="translateSet('zh-cn', 'ja')">
-                中 → 日
-              </md-button>
-            </md-menu-item>
-
-            <md-menu-item>
-              <md-button ng-click="translateSet('ja', 'ko')">
-                日 → 韓
-              </md-button>
-            </md-menu-item>
-
-            <md-menu-item>
-              <md-button ng-click="translateSet('ko', 'ja')">
-                韓 → 日
-              </md-button>
-            </md-menu-item>
-
-
-          </md-menu-content>
-        </md-menu>
-
-      </section>
-
-    </section>
-
-
-  </div>
-
-
-
+  </md-conten>
 
 </md-sidenav>
 
+<div layout="column" class="relative" layout-fill role="main">
 
-<div flex layout="row" class="boxWithHeight" layout-wrap ng-cloak>
+  <md-toolbar layout="row">
+    <md-button class="menu" hide-gt-sm ng-click="rc.toggleNav()" aria-label="user contents">
+      <md-icon md-svg-icon="menu" ></md-icon>
+    </md-button>
+    <h1>Lets Meeting</h1>
+  </md-toolbar>
 
-
-  <!--<section flex="100" class="relative">-->
-    <!--<div class="video-area">-->
-      <!--<video class="local-video" ng-src="{{getLocalVideo()}}" autoplay muted></video>-->
-    <!--</div>-->
-    <!--<div flex layout="row" class="name-area">testmessage</div>-->
-  <!--</section>-->
-
-  <video-player ng-repeat="peer in peers" vid-src="{{peer.stream}}" vid-length="{{peerslength}}" vid-index="{{$index}}" vid-name="{{peer.name}}"></video-player>
-
-    <!--<section flex="100" class="relative">-->
-      <!--<div class="video-area">-->
-        <!--<video ng-src="{{getLocalVideo()}}" autoplay muted></video>-->
-      <!--</div>-->
-      <!--&lt;!&ndash;<video-player ng-repeat="peer in peers" vid-src="{{peer.stream}}" vid-length="{{peerslength}}"></video-player>&ndash;&gt;-->
-    <!--</section>-->
-
-    <!--<section flex="50" class="relative">-->
-      <!--<div class="video-area">-->
-        <!--<video ng-src="{{getLocalVideo()}}" autoplay muted></video>-->
-      <!--</div>-->
-      <!--&lt;!&ndash;<video-player ng-repeat="peer in peers" vid-src="{{peer.stream}}" vid-length="{{peerslength}}"></video-player>&ndash;&gt;-->
-    <!--</section>-->
-
-
-  <!--<div flex="50" layout="row" class="boxWithHeight">-->
-    <!--<section flex="50" class="relative">-->
-      <!--<div class="video-area">-->
-        <!--<video ng-src="{{getLocalVideo()}}" autoplay muted></video>-->
-      <!--</div>-->
-    <!--</section>-->
-    <!--<section flex="50" class="relative">-->
-      <!--<div class="video-area">-->
-        <!--<video ng-src="{{getLocalVideo()}}" autoplay muted></video>-->
-      <!--</div>-->
-    <!--</section>-->
-  <!--</div>-->
-
-  <!--<section flex="20">flex="20"</section>-->
-  <!--<section flex >flex </section>-->
 </div>
-
-
-
-
-
-
-
-  <!--<div id="videos">-->
-    <!--<video id="local-video" ng-src="{{getLocalVideo()}}" autoplay muted></video>-->
-  <!--</div>-->
-
-
-
-
-
-
-
-
-
 
 

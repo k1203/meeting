@@ -11,19 +11,28 @@ angular
     'angular-clipboard',
     'luegg.directives'
   ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, $mdIconProvider, $mdThemingProvider) {
+    $mdThemingProvider.theme('default')
+       .primaryPalette('blue', {'default': '700'})
+       .accentPalette('red');
+
+    $mdIconProvider
+       .defaultFontSet( 'fa' ) 
+       .icon('menu', 'images/menu.svg')
+       .icon('chat', 'images/chat.svg');
+
     $routeProvider
       .when('/room', {
         templateUrl: 'views/room.html',
-        controller: 'RoomCtrl'
+        controller: 'RoomCtrl as rc',
       })
       .when('/room/:roomId', {
         templateUrl: 'views/room.html',
-        controller: 'RoomCtrl'
+        controller: 'RoomCtrl as rc'
       })
       .when('/user/:roomId', {
         templateUrl: 'views/user.html',
-        controller: 'UserCtrl'
+        controller: 'UserCtrl as uc'
       })
       .otherwise({
         redirectTo: '/user/newRoom'
